@@ -14,7 +14,7 @@ export class AccountService {
 
     constructor(private http:HttpClient){
         // this.userSubject = new BehaviorSubject<User>(JSON.parse(localStorage.getItem('user')));
-        // this.user = this.userSubject.asObservable();
+        //this.user = this.userSubject.asObservable();
     }
 
 
