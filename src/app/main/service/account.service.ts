@@ -17,7 +17,7 @@ export class AccountService {
         // this.user = this.userSubject.asObservable();
     }
 
-    
+
 
         login(loginInfo:Login){
 
@@ -27,7 +27,7 @@ export class AccountService {
             //  };
 
              debugger;
-             return this.http.post<Login>(`${environment.apiUrl}/api/user_login`,
+             return this.http.post<Login>(`http://rlapi.mindwavetech.com:4041/api/user_login`,
                 loginInfo)
                 .pipe(map(data=>{
                     this.localStorage?.setItem('userInfo',JSON.stringify(data));
